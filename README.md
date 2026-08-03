@@ -14,6 +14,7 @@ PPP defines a self-contained, verifiable, and routable message format for agent-
 | [Receipt & TrustChain](spec/receipt.md) | Cryptographic proof and audit trail |
 | [Routing](spec/routing.md) | Mesh routing via endpoint URIs |
 | [Error Handling](spec/error-handling.md) | Standard error codes and responses |
+| [Governance & Collaboration](docs/governance.md) | Distributed review roles, community vetting, ADR loop |
 
 ## Whitepaper
 
