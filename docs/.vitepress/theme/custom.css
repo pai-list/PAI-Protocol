@@ -1,0 +1,15 @@
+/* Custom styles for PPP documentation */
+
+:root {
+  --vp-c-brand-1: #00D4AA;
+  --vp-c-brand-2: #00B894;
+  --vp-c-brand-3: #00E6B8;
+}
+
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.vp-doc .custom-block.tip > .custom-block-title {
+  background-color: var(--vp-c-brand-1);
+}

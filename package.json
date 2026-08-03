@@ -1,0 +1,20 @@
+{
+  "name": "pai-protocol",
+  "version": "1.0.0",
+  "description": "PAI Protocol (PPP) - Universal Wire Protocol for Autonomous Agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pai-list/PAI-Protocol.git"
+  },
+  "license": "MIT"
+}

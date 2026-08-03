@@ -1,0 +1,40 @@
+---
+layout: home
+
+hero:
+  name: PAI Protocol (PPP)
+  text: Universal Wire Protocol for Autonomous Agents
+  tagline: Self-contained, verifiable, routable agent communication
+  actions:
+    - theme: brand
+      text: Read Specification
+      link: /spec/message-format
+    - theme: alt
+      text: Whitepaper
+      link: /whitepaper/executive-summary
+    - theme: alt
+      text: GitHub
+      link: https://github.com/pai-list/PAI-Protocol
+
+features:
+  - title: Self-Contained
+    details: Every message is a complete .ppp document — Header + Body + Receipt
+    icon: "PACKAGE"
+  - title: Verifiable
+    details: Receipt = TrustChain proof + Sigstore anchoring. Immutable audit trail.
+    icon: "LOCK"
+  - title: Routable
+    details: Endpoint URI in header enables mesh routing across networks.
+    icon: "GLOBE"
+  - title: Versioned
+    details: Explicit protocol versioning. Backward compatible evolution.
+    icon: "TAG"
+  - title: Transport Agnostic
+    details: HTTP, WebSocket, QUIC, libp2p, email, carrier pigeon.
+    icon: "SATELLITE"
+  - title: Extensible
+    details: Extensible body schema. Per-endpoint schemas via JSON Schema.
+    icon: "PUZZLE"
+
+footer: "MIT Licensed | Built with ❤️ by PAI Universe | <a href=\"https://github.com/pai-list/PAI-Protocol\">GitHub</a>"
+---
