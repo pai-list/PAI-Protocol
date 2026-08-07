@@ -60,6 +60,40 @@ const chain = await TrustChain.fetch('did:agent:pi:agent1')
 const verified = chain.verify(receipt)
 ```
 
+## DVM-HALL Mapping (B4)
+
+Every PPP receipt maps onto a verifiable record in DVM-HALL (the PAI audit/verification layer). This gives receipts external verifiability beyond the TrustChain.
+
+| Receipt Field | DVM-HALL Record |
+|---------------|-----------------|
+| `hash` | `evidence.hash` |
+| `signature` | `evidence.signature` |
+| `signer` | `audit.actor` |
+| `chain_hash` | `audit.chainHead` |
+| `sequence` | `audit.sequence` |
+| `anchor_tx` | `audit.anchor` |
+
+```json
+// DVM-HALL verifiable receipt (VR)
+{
+  "type": "verifiable-receipt",
+  "evidence": {
+    "hash": "sha256:abc123...",
+    "signature": "MEUCIQD...",
+    "algorithm": "ed25519"
+  },
+  "audit": {
+    "actor": "did:agent:pi:agent1",
+    "chainHead": "sha256:abc123...",
+    "sequence": 12345,
+    "anchor": "0xabc123...",
+    "status": "verified"
+  }
+}
+```
+
+A verifier can replay the receipt through DVM-HALL and get a machine-checkable `verified | tampered` verdict — independent of the signer.
+
 ## Sigstore Anchoring
 
 Receipts are periodically anchored to Sigstore (Rekor) for public transparency:

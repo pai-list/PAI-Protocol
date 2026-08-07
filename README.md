@@ -1,3 +1,17 @@
+<div align="center">
+
+```ascii
+ ╔═══════════════════════════════════════════════════════════════════════════╗
+ ║   _  _  _  _  _  ____  _  _  _  _  _  ____  ____  _  _  ____  ____  ____  ║
+ ║  / )( \( \/ )( \/ ___)( \/ )( \/ )( \/ ___)(  _ \( \/ )/ ___)/ ___)(  _ \ ║
+ ║  ) __ ( )  (  ) )\___ \ )  /  )  (  ) )\___ \ ) __/ )  / \___ \\___ \ ) __/ ║
+ ║  \_)(_/(_/\_)(_/ (____/(_/   (_/\_)(_/ (____/(__)  (_/  (____/(____/(__)   ║
+ ║                                                                           ║
+ ║                 A X I O M  I D  |  P A I  U N I V E R S E                 ║
+ ╚═══════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
 # PAI Protocol (PPP)
 
 **Universal Wire Protocol for Autonomous Agents**
@@ -15,6 +29,20 @@ PPP defines a self-contained, verifiable, and routable message format for agent-
 | [Routing](spec/routing.md) | Mesh routing via endpoint URIs |
 | [Error Handling](spec/error-handling.md) | Standard error codes and responses |
 | [Governance & Collaboration](docs/governance.md) | Distributed review roles, community vetting, ADR loop |
+
+## The 3 Axes of PPP
+
+| Axis | Document | Description |
+|------|----------|-------------|
+| PPP-1 | [Peer Transport](spec/ppp-peer-transport.md) | A2A routing over WebRTC/WebSocket, no central broker |
+| PPP-2 | [Proof-of-Prompt-Performance](spec/proof-of-prompt-performance.md) | Ed25519 prompt→plan→output chain + Muraqabah |
+| PPP-3 | [Pay-Per-Prompt](spec/pay-per-prompt.md) | Micro-settlement in Pi via escrow DO + pi-backend |
+
+## Agent Well-Known Protocol
+
+| Document | Description |
+|----------|-------------|
+| [Agent Well-Known](spec/agent-well-known.md) | Runtime Contract, Constitution, Capabilities, Proofs at `/.well-known/*` |
 
 ## Whitepaper
 

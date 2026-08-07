@@ -30,6 +30,11 @@ pai://<domain>/<action>
 | `pai://agent/register` | agent | Agent registration |
 | `pai://mcp/call` | mcp | MCP tool call |
 | `pai://mcp/stream` | mcp | MCP streaming |
+| `pai://transport/offer` | transport | PPP-1 WebRTC offer |
+| `pai://transport/answer` | transport | PPP-1 WebRTC answer |
+| `pai://transport/ice` | transport | PPP-1 ICE candidate relay |
+| `pai://economy/validate` | economy | PPP-2 Economic Validator verdict |
+| `pai://economy/escrow` | economy | PPP-3 settlement intent |
 
 ## Routing Process
 
