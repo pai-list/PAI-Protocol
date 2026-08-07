@@ -4,13 +4,20 @@
   "description": "PAI Protocol (PPP) - Universal Wire Protocol for Autonomous Agents",
   "private": true,
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "build": "tsc && vitepress build docs",
+    "preview": "vitepress preview docs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3",
+    "vitepress": "^1.6.4",
+    "vitest": "^2.1.8"
   },
   "repository": {
     "type": "git",
